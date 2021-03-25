@@ -5,7 +5,7 @@
 
 Submitted by: Jade Eng
 
-Time spent: 5 hours spent in total
+Time spent: 4 hours spent in total
 
 Link to project: https://glitch.com/edit/#!/site-prgram-prework?path=index.html%3A15%3A11
 
@@ -25,12 +25,12 @@ The following **optional** features are implemented:
 
 * [X] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [X] Buttons use a pitch (frequency) other than the ones in the tutorial
-* [ ] More than 4 functional game buttons
-* [] Playback speeds up on each turn
+* [X] More than 4 functional game buttons
+* [ ] Playback speeds up on each turn
 * [ ] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
-* [X] Game button appearance change goes beyond color (e.g. add an image)
-* [X] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [ ] Game button appearance change goes beyond color (e.g. add an image)
+* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
@@ -40,7 +40,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories: 
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/51209243/112427031-2ffec000-8cf6-11eb-99c4-ac37b4a6a80b.gif)
+
+ezgif.com-video-to-gif(1).gif![image](https://user-images.githubusercontent.com/51209243/112430590-99350200-8cfb-11eb-8d52-7e08f45fbeec.png)
 
 
 
