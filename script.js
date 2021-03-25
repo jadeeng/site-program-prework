@@ -20,8 +20,8 @@ function startGame(){
 }
 function stopGame(){
   gamePlaying=false;
-  document.getElementById("startBtn").classList.add("hidden");
-  document.getElementById("stopBtn").classList.remove("hidden");
+  document.getElementById("startBtn").classList.remove("hidden");
+  document.getElementById("stopBtn").classList.add("hidden");
 
 }
 
@@ -68,13 +68,6 @@ function guess(btn){
     return;
   }
 
-  function guess(btn){
-  console.log("user guessed: " + btn);
-
-  if(!gamePlaying){
-    return;
-  }
-
   if(pattern[guessCounter] == btn){
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
@@ -90,7 +83,7 @@ function guess(btn){
     loseGame();
   }
 }    
-}
+
 
 // Init Sound Synthesizer
 var context = new AudioContext()

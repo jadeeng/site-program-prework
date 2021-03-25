@@ -30,6 +30,12 @@
 </button>
     
     <div id="gameButtonArea">
+    <audio src="audio.mp3" id="myAudio"></audio>
+   <script>
+     function playMyAudio(){
+       document.getElementById("myAudio").play();
+     }
+   </script>
       
     <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
     <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
