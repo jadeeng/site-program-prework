@@ -26,12 +26,12 @@ The following **optional** features are implemented:
 * [X] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [X] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [ ] More than 4 functional game buttons
-* [X] Playback speeds up on each turn
+* [] Playback speeds up on each turn
 * [ ] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
 * [X] Game button appearance change goes beyond color (e.g. add an image)
 * [X] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-* [X] User has a limited amount of time to enter their guess on each turn
+* [] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
@@ -40,20 +40,40 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](your-link-here)
+
 
 
 ## Reflection Questions
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
+
+https://programminghead.com/how-to-play-audio-in-html-using-javascript/
+https://www.w3schools.com/css/ 
+
+2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
+I had difficulty getting the game to continue past the first tone. I decided that it would be best to check the outcome through console log responses and then work backwards from what responses I did and did not see. First, I made sure that the rest of the console log responses in the web developer window displayed the correct responses, e.g. "user guessed:x" when pressing all four numbers. Since all of the game buttons worked correctly, I moved to the winGame() and loseGame() functions, as these were the functions that called the alert box telling the user that the game ended. I found no error with these functions. 
+After determining that the last portions of the game’s logic wasn’t the issue, I moved backwards through the functions until I finally realized that I mistakenly wrote two guess(btn) functions, the first one with an empty body. Deleting this unnecessary section allowed the game to proceed as intended. 
 
 
-2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
+As I started working on the add ons for this game, I wondered how I could transform this into a multiplayer game with players in different areas. How can I make this game cross-platform, so that users can play it from any device of their choosing without having to rewrite code in different languages? How would I go about hosting this game on a webpage versus and application? I’ve also gotten more interested in how front end and back end languages communicate with each other, how data is stored so that it can be accessed for later use.
+
+4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
+I would add the following features to the game:
+
+The user can pick from different uploaded songs to play back in their entirety. The songs are preplanned and short.
+In order to do this, more buttons would have to be created. Maybe a piano like appearance?
+This would definitely help with the overall functionality of the product. Memorizing music pieces line by line is a technique that I used when I was younger, so maybe for shorter pieces and new players, learning to play back a song note by note would be beneficial.
+
+The game has points.
+Each successful turn adds x amount of points. When you’re on a “streak”-- getting correct answers consecutively— more points are added.
+Instead of automatically ending the game, the user has to start over from one tone and build themselves back up. 
+The game can either end on a timer, when the user decides to press “end,” or the user can determine how many tones would count as a win in the beginning.
+
+A user can play against another user in alternating turns. 
+Whoever makes the first mistake loses.
+The amount of time each user takes on a turn can be added up into points?
 
 
-3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-
-
-4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
 
 
