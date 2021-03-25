@@ -4,12 +4,18 @@ const cluePauseTime = 333; //time to pause between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; 
 var guessCounter = 0;
+
+while(pattern.length<8){
+      var r=Math.floor(Math.random()*8)+1;
+      if(pattern.indexOf(r)===-1)pattern.push(r);
+      }
+console.log(pattern);
 
 function startGame(){
   progress = 0;
@@ -84,8 +90,40 @@ function guess(btn){
   }
 }    
 
+/*function playInstrument(btn,len){ 
+  document.getElementById("button1").addEventListener("click",function(){
+  document.getElementById("tuba").play()
+  document.getElementById("button2").addEventListener("click",function(){
+  document.getElementById("trumpet").play()
+  document.getElementById("button3").addEventListener("click",function(){
+  document.getElementById("trombone").play()
+  document.getElementById("button4").addEventListener("click",function(){
+  document.getElementById("french horn").play()
+  document.getElementById("button5").addEventListener("click",function(){
+  document.getElementById("flute").play()
+  document.getElementById("button6").addEventListener("click",function(){
+  document.getElementById("clarinet").play()
+  o.frequency.value = freqMap[btn]
+  g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
+  tonePlaying = true
+  setTimeout(function(){
+    stopTone()
+  },len)
+      
+function startTone(btn){
+  if(!tonePlaying){
+    o.frequency.value = freqMap[btn]
+    g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
+    tonePlaying = true
+  }
+}
+function stopTone(){
+    g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
+    tonePlaying = false
+}
+*/
 
-// Init Sound Synthesizer
+//Init Sound Synthesizer
 var context = new AudioContext()
 var o = context.createOscillator()
 var g = context.createGain()
@@ -99,7 +137,10 @@ const freqMap = {
   1: 261.6,
   2: 329.6,
   3: 392,
-  4: 466.2
+  4: 466.2,
+  5: 500.3,
+  6: 230.4
+  
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -122,4 +163,6 @@ function stopTone(){
 }
 
 
+
+                                                    
 
