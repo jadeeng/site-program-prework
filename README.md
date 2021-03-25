@@ -27,11 +27,11 @@ The following **optional** features are implemented:
 * [X] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [X] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
-* [ ] Computer picks a different pattern each time the game is played
+* [X] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
-* [ ] Game button appearance change goes beyond color (e.g. add an image)
+* [x] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-* [] User has a limited amount of time to enter their guess on each turn
+* [ ] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
@@ -52,6 +52,8 @@ ezgif.com-video-to-gif(1).gif![image](https://user-images.githubusercontent.com/
 
 https://programminghead.com/how-to-play-audio-in-html-using-javascript/
 https://www.w3schools.com/css/ 
+https://stackoverflow.com/questions/4589451/documentation-for-javascript-audio-methods
+
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 I had difficulty getting the game to continue past the first tone. I decided that it would be best to check the outcome through console log responses and then work backwards from what responses I did and did not see. First, I made sure that the rest of the console log responses in the web developer window displayed the correct responses, e.g. "user guessed:x" when pressing all four numbers. Since all of the game buttons worked correctly, I moved to the winGame() and loseGame() functions, as these were the functions that called the alert box telling the user that the game ended. I found no error with these functions. 
